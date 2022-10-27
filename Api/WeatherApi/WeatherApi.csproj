@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Services\" />
+    <None Remove="Models\RapidApiModels\" />
+    <None Remove="Models\Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Models\RapidApiModels\" />
+    <Folder Include="Models\Exceptions\" />
+  </ItemGroup>
+</Project>
